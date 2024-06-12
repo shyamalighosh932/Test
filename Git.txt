@@ -1,0 +1,14 @@
+1.What is Git?
+Git is a free and open sourch distributed version control system designed to handle
+every thing from small to very large projects  with speed and efficiency.
+2.Some of Git Features.
+1.tag
+2.Commit
+3.Url
+4.Index
+5.Head
+6.Branch
+3.What is Git States?
+	a.Modified
+	b.Staged
+	c.Committed
