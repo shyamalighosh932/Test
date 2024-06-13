@@ -3,12 +3,90 @@ Git is a free and open sourch distributed version control system designed to han
 every thing from small to very large projects  with speed and efficiency.
 2.Some of Git Features.
 1.tag
+Ans:  Tags are a powerful feature in Git for managing releases and marking significant points in the history of your project.
+ They help in identifying stable versions of the project and in rolling back to a known state if needed.
+Foe exmaple-- lightwaight Tag command  -- git tag <tagname>. bash>> git tag , or git show <tagname>
 2.Commit
+Ans: In Git, a commit represents a snapshot of your repository at a 
+specific point in time. Each commit contains information about the changes made to the repository, 
+including metadata such as the author, date, and commit message. Here are some key features of Git commits:
+Example: git commit -m "Commit message", git add <file>, git commit --amend -m "New commit message".
 3.Url
+ans: In Git, a URL (Uniform Resource Locator) specifies the location of a remote repository and is
+essential for fetching from or pushing to the repository, 
+with different formats available depending on the protocol used. example: https://github.com/username/repository.git
 4.Index
+ans: 
+In Git, the Index (also known as the staging area or cache) is an intermediate area where changes are gathered before
+committing them to the repository. It allows you to prepare and review changes before creating a new commit. Example: git add file1.txt,
+git add file1.txt file2.txt, git add . , git status.
 5.Head
+Ans: In Git, HEAD is a reference to the current commit in the working directory. 
+It points to the latest commit on the currently checked-out branch. Here are some key points about HEAD:
+Example: git checkout main (Checkout a Branch (Move HEAD):),  git log -1 (view current "Head")
 6.Branch
-3.What is Git States?
-	a.Modified
+Ans : In Git, a branch is a pointer to a specific commit that represents an independent line of development,
+allowing for isolated work on features or fixes without affecting the main codebase.
+example: git branch <branch-name> (Creating a Branch:), git checkout <branch-name> (git checkout <branch-name>).
+3.Type of Git States?
+	a.Modified 
+**In Git status, "modified" indicates that a file has been changed since the last commit, 
+but these changes have not yet been staged for the next commit using git add.
 	b.Staged
+** In Git status, "staged" refers to changes that have been marked to be included in the next commit using git add,
+ but have not yet been committed.
 	c.Committed
+** In Git status, "committed" signifies changes have been permanently recorded in the repository's history,
+ ensuring tracking and accessibility by other branches or collaborators. example : $ git commit -m "Modify example.txt"
+4.Why Use Git?
+ans: We use Git for version control, enabling collaborative development, tracking changes, facilitating team coordination, 
+maintaining project history, and ensuring code integrity and reproducibility across software projects.
+5.Linux Command 
+1.pwd
+ans: The pwd command in Linux stands for "Present Working Directory." It displays the current working directory path in the terminal.
+example: /home/user/Documents
+2.ls
+ans: The ls command in Linux stands for "list." It's used to list the files and directories in the current directory.
+Example:
+If you're in the directory /home/user/Documents, running ls will output a list of files and directories in that directory.
+file1.txt
+file2.txt
+folder1
+folder2.
+3.ls -a
+4.clear
+5.cd [directory_name]
+6.mkdir [new_folder_name]
+7.cd ../ 
+8.touch [file_name]
+9.code [file_edit]
+10.rm[file_name]
+11.git -help
+---------------------------------
+git init 
+Ans: The git init command is used to initialize a new Git repository. 
+It creates a new subdirectory named .git that contains all the necessary metadata for the repository. 
+This metadata includes configurations, the database of commits, and other repository-specific files.
+ Running git init essentially turns the current directory into a Git repository, allowing you to start version controlling your files.
+git add .
+Ans: The git add . command stages all the changes in the current directory and its subdirectories for the next commit.
+ This includes new files, modified files, and deleted files.
+ Using the period (.) as an argument tells Git to add everything in the current directory recursively.
+example: echo "Hello, World!" > file1.txt
+echo "Another file" > file2.txt.
+git commit -m "First Commit"
+Ans: The git commit -m "First Commit" command is used to create a new commit with the staged changes, 
+along with a commit message specified directly in the command. The -m flag stands for
+"message" and is followed by the commit message, which in this case is "First Commit".
+example: Create a Commit with a Message: git commit -m "First Commit"
+git branch -M main
+ans: The git branch -M main command is used to rename the current branch to main, using the -M option which stands
+for "move/rename" and forces the rename if a branch named main already exists.
+git remote add origin https://github.com/shyamali/Test.git --- we need to copy the link from repository and paste here.
+git push -u origin main
+ans: The git push -u origin main command is used to push the local main branch to the
+remote repository named origin and set the upstream (tracking) reference for the main branch.
+---------------------------
+problem:remote origin already exists.
+git remote rm origin [Remove local to remote]
+than>>git remote add origin https://github.com/shyamalighosh932/Test.git
